@@ -45,6 +45,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 			Response response=PlaylistApicalls.post(requestplaylist);
 			assertStatuscode(response.statusCode(),201);
 			assertPlaylistEqual(response.as(Playlist.class),requestplaylist);		
+			System.out.print("First Commit");
 			
 			
 		}
